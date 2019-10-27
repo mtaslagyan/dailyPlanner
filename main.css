@@ -1,0 +1,22 @@
+.title{
+    color:darkgrey;
+    font-size:36px;
+    font-weight:bold;
+    text-align:center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    
+  }
+  input {
+      padding: 20px;
+      width:86%;
+      font-size:24px;
+  }

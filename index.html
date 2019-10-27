@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>Day Planner</title>
+</head>
+<body>
+    <table>
+        <div class="title">DAILY PLANNER</div>
+        <tr>
+            <th>Time</th>
+            <th>Input</th>
+        </tr>
+        <tr>
+            <td>9:00 am</td>
+            <td id="9am">
+                <form action="">
+                    <input id="9amtodo" type="text">
+                    <button id="9amsubmitBtn" type="button">Submit</button>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>10:00 am</td>
+            <td id="10am">
+                <input id="10amtodo" type="text">
+                <button id="10amsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>11:00 am</td>
+            <td id="11am">
+                <input id="11amtodo" type="text">
+                <button id="11amsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>12:00 pm</td>
+            <td id="12pm">
+                <input id="12pmtodo" type="text">
+                <button id="12pmsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>1:00 pm</td>
+            <td id="1pm">
+                <input id="1pmtodo" type="text">
+                <button id="1pmsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>2:00 pm</td>
+            <td id="2pm">
+                <input id="2pmtodo" type="text">
+                <button id="2pmsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>3:00 pm</td>
+            <td id="3pm">
+                <input id="3pmtodo" type="text">
+                <button id="3pmsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>4:00 pm</td>
+            <td id="4pm">
+                <input id="4pmtodo" type="text">
+                <button id="4pmsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+        <tr>
+          <td>5:00 pm</td>
+            <td id="5pm">
+                <input id="5pmtodo" type="text">
+                <button id="5pmsubmitBtn" type="button">Submit</button>
+            </td>
+        </tr>
+      </table>   
+      
+      
+
+      <script>
+
+        // ************************************* 9am *************************************
+
+        var submitBtn9am = document.getElementById("9amsubmitBtn");
+        var todo9am = document.getElementById("9amtodo");
+
+
+        submitBtn9am.addEventListener("click", function(){
+            todo9am.setAttribute("placeholder", todo9am.value);
+            var value9am = todo9am.value;
+            todo9am.value = "";
+        });
+
+      </script>
+</body>
+</html>
